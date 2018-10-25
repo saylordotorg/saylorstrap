@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	</header><!-- .page-header -->
 
-	<div class="page-content">
+	<div class="page-content card-body loop-content-none">
 
 		<?php
 		if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>

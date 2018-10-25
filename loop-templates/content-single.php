@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+<article <?php post_class('card-body loop-content-single'); ?> id="post-<?php the_ID(); ?>">
 
 	<header class="entry-header">
 
