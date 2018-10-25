@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<?php if ( 'post' == get_post_type() ) : ?>
 
-				<div class="entry-meta card-subtitle mb-2">
+				<div class="entry-meta card-subtitle my-2">
 					<?php understrap_posted_on(); ?>
 				</div><!-- .entry-meta -->
 
