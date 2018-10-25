@@ -228,3 +228,8 @@ $breadcrumb-divider-rtl: "/" !default;
 // Alerts
 $alert-border-width:                0 !default;
 
+/** Page Backgrounds */
+.wrapper {
+    background-color: $light;
+}
+
