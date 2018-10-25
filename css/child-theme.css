@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/** Page Backgrounds */
+.wrapper {
+  background-color: #f5f5f5; }
+
 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
