@@ -12,11 +12,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <article <?php post_class('card-body loop-content-single'); ?> id="post-<?php the_ID(); ?>">
 
-	<header class="entry-header">
+	<header class="entry-header card-title">
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-		<div class="entry-meta">
+		<div class="entry-meta card-subtitle my-2">
 
 			<?php understrap_posted_on(); ?>
 

@@ -17,31 +17,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header();
 
-
+$container   = get_theme_mod( 'understrap_container_type' );
 ?>
 
+<?php if ( is_front_page() && is_home() ) : ?>
+	<?php get_template_part( 'global-templates/hero' ); ?>
+<?php endif; ?>
 
-<section class="contenido__internas blog-home">
-	<div class="container-fluid">
+<div class="wrapper" id="index-wrapper">
+
+	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+
 		<div class="row">
-			<div class="col-lg-12 col-md-12">
-				<div class="blog__item blog__item--left">
-					<h1>Saylor Academy Blog</h1>
-					<div class="title_blog-home">
-						<h3>Don´t miss a post: </h3>
-						<div class="blog-home--item">
-							<a href="<?php bloginfo('rss2_url'); ?>"><i class="fas fa-rss"></i>Subscribe via RSS</a>
-							<a href="#"><i class="fas fa-comments"></i>Join the conversation</a>
-							<a href="#"><i class="fas fa-envelope"></i>Get posts & update by email</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 col-md-12">
+
+			<!-- Do the left sidebar check and opens the primary div -->
+			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
+
+			<main class="site-main" id="main">
 
 				<?php if ( have_posts() ) : ?>
 
@@ -49,26 +41,15 @@ get_header();
 
 					<?php while ( have_posts() ) : the_post(); ?>
 
-						<div class="blog-home-item">
-							<div class="row">
-								<div class="col-lg-3">
-									<?php if ( has_post_thumbnail() ) : ?>
-									    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-									        <?php the_post_thumbnail('large'); ?>
-									    </a>
-									<?php endif; ?>
-								</div>
-								<div class="col-lg-9">
-									<h3 class="post__title">
-										<?php the_title(); ?>
-									</h3>
-									<ul>
-										<li><i class="fas fa-calendar-alt"></i> on<strong><?php the_date(); ?></strong></li>
-									</ul>
-									<p><?php  echo get_excerpt(210, get_the_ID()); ?></p>
-								</div>
-							</div>
-						</div>
+						<?php
+
+						/*
+						 * Include the Post-Format-specific template for the content.
+						 * If you want to override this in a child theme, then include a file
+						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+						 */
+						get_template_part( 'loop-templates/content', get_post_format() );
+						?>
 
 					<?php endwhile; ?>
 
@@ -78,12 +59,19 @@ get_header();
 
 				<?php endif; ?>
 
+			</main><!-- #main -->
 
-			
-			</div>
-		</div>
-	</div>
-</section>
+			<!-- The pagination component -->
+			<?php understrap_pagination(); ?>
 
+		<!-- Do the right sidebar check -->
+		<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
+		
+
+	</div><!-- .row -->
+
+</div><!-- Container end -->
+
+</div><!-- Wrapper end -->
 
 <?php get_footer(); ?>
