@@ -9,3 +9,6 @@
 
 // Any additional imported files //
 @import "theme/child_theme";  // <--------- Add your styles into this file
+
+// TODO: Host these fonts locally, like in our Moodle theme.
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans:400,600,700,800|Raleway:400,600,700,800");
