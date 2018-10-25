@@ -12,9 +12,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<section class="no-results not-found">
+<section class="no-results not-found card">
 
-	<header class="page-header">
+	<header class="page-header card-body card-title">
 
 		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'understrap' ); ?></h1>
 
