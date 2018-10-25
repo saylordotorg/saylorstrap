@@ -1,0 +1,22 @@
+/** Buttons */
+// Button color should be our button orange.
+.btn-primary {
+    @include button-variant($button-bg-orange, darken($button-bg-orange, 7.5%), darken($button-bg-orange, 10%), lighten($button-bg-orange,5%), lighten($button-bg-orange, 10%), darken($button-bg-orange,30%));
+}
+
+.btn-outline-primary {
+    @include button-outline-variant($button-bg-orange, #222222, lighten($button-bg-orange,5%), $button-bg-orange);
+}
+.btn-secondary {
+    @include button-variant($button-bg-orange, darken($button-bg-orange, 7.5%), darken($button-bg-orange, 10%), lighten($button-bg-orange,5%), lighten($button-bg-orange, 10%), darken($button-bg-orange,30%));
+}
+
+.btn-outline-secondary {
+    @include button-outline-variant($button-bg-orange, #222222, lighten($button-bg-orange,5%), $button-bg-orange);
+}
+
+// Button primary and secondary text should always be white.
+// Sometimes it was showing up as the secondary color.
+.btn-primary, .btn-secondary {
+    color: $white !important;
+}
