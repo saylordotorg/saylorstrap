@@ -10,80 +10,47 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header();
+$container   = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<!-- Title bar -->
-<section class="title__bar blog">
-	<div class="container">
+<div class="wrapper" id="single-wrapper">
+
+	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+
 		<div class="row">
-			<div class="col-lg-12 text-center">
-				<h3><a href="#">SAYLOR ACADEMY | FREE AND OPEN ONLINE COURSES FOR PEOPLE EVERYWHERE / ANNOUNCEMENTS /  <span>ALMOST 100 CREDITS – TUITION-FREE!</span></a></h3>
-			</div>	
-		</div>
-	</div>
-</section>
 
-<section class="contenido__internas blog">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-4 col-md-4 d-none d-md-block">
-				<div class="blog__item blog__item--left">
-					<a href="<?php bloginfo('rss2_url'); ?>" target="_blank"><i class="fas fa-rss"></i>Subscribe via RSS</a>
-					<a href="#"><i class="fas fa-comments"></i>Join the conversation</a>
-					<a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>"><i class="fas fa-list-ul"></i>View all posts</a>
+			<!-- Do the left sidebar check -->
+			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
-					<div class="tweets">
-						<a class="twitter-timeline" data-height="600" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-8 col-md-8">
+			<main class="site-main card" id="main">
 
-				<?php if ( have_posts() ) : ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php /* Start the Loop */ ?>
-
-					<?php while ( have_posts() ) : the_post(); ?>
-
-						<div class="blog__item blog__item--right">
-							<div class="post">
-								<h3 class="post__title">
-									<?php the_title(); ?>
-								</h3>
-								<ul>
-									<li><i class="fas fa-calendar-alt"></i> on<strong><?php the_date(); ?></strong></li>
-									<li>By<a href="#"> <?php the_author(); ?></a></li>
-									<li>POSTED IN<a href="#"><?php the_category( '|' ); ?></a></li>
-								</ul>
-								<?php if ( has_post_thumbnail() ) : ?>
-								    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-								        <?php the_post_thumbnail('large'); ?>
-								    </a>
-								<?php endif; ?>
-
-								<ul class="share">
-									<li><i class="fab fa-facebook-f"></i></li>
-									<li><i class="fab fa-twitter"></i></li>
-									<li><i class="fas fa-envelope"></i></li>
-									<li><i class="fas fa-print"></i></li>
-								</ul>
-
-								<?php the_content(); ?>
-							</div>
+					<?php get_template_part( 'loop-templates/content', 'single' ); ?>
+						<div id="post-nav-container" class="card-body">
+							<?php understrap_post_nav(); ?>
 						</div>
 
-					<?php endwhile; ?>
+					<div id="post-comments-container" class="card-body">
+						<?php
+						// If comments are open or we have at least one comment, load up the comment template.
+						if ( comments_open() || get_comments_number() ) :
+							comments_template();
+						endif;
+						?>
+					</div>
 
-				<?php else : ?>
+				<?php endwhile; // end of the loop. ?>
 
-					<?php get_template_part( 'loop-templates/content', 'none' ); ?>
+			</main><!-- #main -->
 
-				<?php endif; ?>
+		<!-- Do the right sidebar check -->
+		<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
 
-				
-			</div>
-		</div>
-	</div>
-</section>
+	</div><!-- .row -->
+
+</div><!-- Container end -->
+
+</div><!-- Wrapper end -->
 
 <?php get_footer(); ?>

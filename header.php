@@ -69,7 +69,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             
             <!-- user_menu -->
             <li class="nav-item d-flex align-items-center text-right usermenu">
-                <div class="usermenu"><span class="login"> <a href="https://moodle-dev.sylr.org/login/index.php">Log in or Sign up</a></span></div>
+                <div class="usermenu"><span class="login"> <a href="https://learn.saylor.org/login/index.php">Log in or Sign up</a></span></div>
             </li>
         </ul>
         <!-- search_box -->
