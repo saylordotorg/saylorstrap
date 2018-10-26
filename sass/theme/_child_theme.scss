@@ -50,4 +50,11 @@ h1 { font-family: $font-family-header;
 
 .btn {
     font-family: $font-family-buttons;
+#page {
+    padding-bottom: 1rem;
+    margin-bottom: 0 !default;
+    margin-top: 0px !default;
+    padding-top: 0 !default;
+    padding-bottom: 0 !default;
+}
 }
