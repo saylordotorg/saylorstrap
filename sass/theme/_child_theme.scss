@@ -51,3 +51,32 @@ h1 { font-family: $font-family-header;
 .btn {
     font-family: $font-family-buttons;
 }
+
+/** Footer */
+#page-footer a {
+    text-decoration: none;
+}
+
+#page-footer .footer-logo .icon {
+    width: auto;
+    height: 30px;
+}
+
+#page-footer .nav-link {
+    padding: 0;
+    margin-right: .5rem;
+}
+
+#footer-logo-share-bottom .footer-logo .icon {
+    width: auto;
+    height: 40px;
+}
+
+#footer-links h4 {
+    margin: 0;
+}
+
+#footer-ccby-logo .icon {
+    width: 80px;
+    height: auto;
+}
