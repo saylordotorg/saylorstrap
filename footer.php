@@ -18,7 +18,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div><!-- #page we need this extra closing tag here -->
 
-<footer id="page-footer" class="container-fluid p-0 bg-dark text-light">
+<footer id="page-footer" class="container-fluid d-flex p-0 bg-dark text-light">
     <div id= "footer-container" class="container-fluid p-0">
         <div id="footer-navbar" class="container-fluid d-inline-flex flex-row align-items-center justify-content-center justify-content-sm-between bg-primary text-white">
             <div id="footer-logo-share-navbar" class="m-0 my-sm-1 mr-sm-auto d-none d-sm-inline-flex">
