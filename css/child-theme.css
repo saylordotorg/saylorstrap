@@ -10886,6 +10886,9 @@ a.skip-link {
 .btn-primary, .btn-secondary {
   color: #ffffff !important; }
 
+.fa, .far, .fas {
+  font-family: "FontAwesome" !important; }
+
 body {
   -webkit-font-smoothing: antialiased; }
 

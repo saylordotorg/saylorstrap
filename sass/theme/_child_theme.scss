@@ -26,6 +26,11 @@ $font-family-base: "Open Sans", $font-family-sans-serif !default;
 $font-family-header: "Raleway", $font-family-sans-serif;
 $font-family-buttons: "Comfortaa", $font-family-sans-serif;
 
+// Hotfix for Font Awesome family not loading correctly.
+.fa, .far, .fas {
+    font-family: "FontAwesome" !important;
+}
+
 body {
     -webkit-font-smoothing: antialiased;
 }
