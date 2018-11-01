@@ -1,13 +1,1 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans:400,600,700,800|Raleway:400,600,700,800");
-
-
-
-.dropdown-toggle::after {
-  border:none;
-  background-image:url(../img/arrow_03.jpg);
-  width: 13px;
-  height: 11px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  vertical-align: middle;
-}

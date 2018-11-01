@@ -91,37 +91,38 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div>
 </footer>
 
-<div id="nav-drawer" data-region="drawer" class="d-print-none moodle-has-zindex closed" aria-hidden="" tabindex="-1">
-    <nav class="list-group d-md-none m-b-1">
+<div id="nav-drawer" data-region="drawer" class="d-print-none moodle-has-zindex closed d-flex flex-column" aria-hidden="" tabindex="-1">
+    
             <?php wp_nav_menu(
                 array(
                     'theme_location'  => 'primary',
-                    'container_class' => '',
+                    'container'       => 'nav',
+                    'container_class' => 'd-md-none mb-1',
                     'container_id'    => '',
-                    'menu_class'      => '',
+                    'menu_class'      => 'list-group',
                     'fallback_cb'     => '',
+                    'link_before'     => '<div class="ml-1">',
+                    'link_after'      => '</div>',
                     'menu_id'         => 'main-menu',
                     'depth'           => 2,
                     'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
                 )
             ); ?>
-    </nav>
-    <nav class="list-group m-b-1">
-        <div>
             <?php wp_nav_menu(
                 array(
-                    'theme_location'  => 'footer',
-                    'container_class' => '',
+                    'theme_location'  => 'footer2',
+                    'container'       => 'nav',
+                    'container_class' => 'mb-1',
                     'container_id'    => '',
-                    'menu_class'      => '',
+                    'menu_class'      => 'list-group',
                     'fallback_cb'     => '',
-                    'menu_id'         => 'footer2',
+                    'link_before'     => '<div class="ml-1">',
+                    'link_after'      => '</div>',
+                    'menu_id'         => 'nav-footer',
                     'depth'           => 0,
                     'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
                 )
             ); ?>
-        </div>
-    </nav>
 </div>
 
 <script>
