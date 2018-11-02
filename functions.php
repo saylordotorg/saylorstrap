@@ -51,3 +51,5 @@ function get_excerpt($count, $post_id){
   $excerpt = $excerpt.'... <a href="'.$permalink.'">Read more</a>';
   return $excerpt;
 }
+
+add_theme_support( 'yoast-seo-breadcrumbs' );

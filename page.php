@@ -22,6 +22,8 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper" id="page-wrapper">
 
+	<?php get_template_part( 'loop-templates/breadcrumbs', 'page' ); ?>
+
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
 		<div class="row">
