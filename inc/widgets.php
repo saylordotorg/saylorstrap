@@ -59,9 +59,9 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 			'name'          => __( 'Right Sidebar', 'understrap' ),
 			'id'            => 'right-sidebar',
 			'description'   => __( 'Right sidebar widget area', 'understrap' ),
-			'before_widget' => '<aside id="%1$s" class="widget %2$s card">',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s card card-body py-1 mb-3">',
 			'after_widget'  => '</aside>',
-			'before_title'  => '<h3 class="widget-title">',
+			'before_title'  => '<h3 class="widget-title card-title">',
 			'after_title'   => '</h3>',
 		) );
 
@@ -69,9 +69,9 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 			'name'          => __( 'Left Sidebar', 'understrap' ),
 			'id'            => 'left-sidebar',
 			'description'   => __( 'Left sidebar widget area', 'understrap' ),
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s card card-body py-1 mb-3">',
 			'after_widget'  => '</aside>',
-			'before_title'  => '<h3 class="widget-title">',
+			'before_title'  => '<h3 class="widget-title card-title">',
 			'after_title'   => '</h3>',
 		) );
 
