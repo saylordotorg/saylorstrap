@@ -11004,3 +11004,8 @@ h1 {
   border-bottom: 0;
   border-left: 0;
   border-right: 0; }
+
+/** Hero Image */
+#hero-container {
+  -webkit-box-shadow: inset 55vw 0 90vw 10vh #173140;
+          box-shadow: inset 55vw 0 90vw 10vh #173140; }
