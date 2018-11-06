@@ -11009,3 +11009,8 @@ h1 {
 #hero-container {
   -webkit-box-shadow: inset 55vw 0 90vw 10vh #173140;
           box-shadow: inset 55vw 0 90vw 10vh #173140; }
+
+@media only screen and (max-width: 768px) {
+  #hero-container {
+    -webkit-box-shadow: inset 0 0 0 100vw #173140;
+            box-shadow: inset 0 0 0 100vw #173140; } }
