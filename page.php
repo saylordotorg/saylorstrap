@@ -24,8 +24,6 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 	<?php get_template_part( 'loop-templates/breadcrumbs', 'page' ); ?>
 
-	<?php get_template_part( 'global-templates/top-container-check'); ?>
-
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
 		<div class="row">
