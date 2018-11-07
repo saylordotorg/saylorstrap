@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<article <?php post_class('card my-3 row loop-content'); ?> id="post-<?php the_ID(); ?>">
+<article <?php post_class('card mb-3 row loop-content'); ?> id="post-<?php the_ID(); ?>">
 	<div class="card-body content-container container d-flex flex-column flex-lg-row align-items-center justify-content-between">
 		<?php if (!empty(get_the_post_thumbnail( $post->ID))) {
 			echo '<div class="post-thumbnail m-3">';
