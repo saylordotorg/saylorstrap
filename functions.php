@@ -31,13 +31,24 @@ function add_child_theme_textdomain() {
 }
 add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
 
-
-
 add_action( 'after_setup_theme', 'register_my_menu' );
 function register_my_menu() {
   register_nav_menu( 'footer', __( 'Footer Menu', 'saylor' ) );
   register_nav_menu( 'footer2', __( 'Footer Menu 2', 'saylor' ) );
 }
+
+function saylorstrap_widgets_init() {
+  register_sidebar( array(
+    'name'          => 'Top Container',
+    'id'            => 'top-container',
+    'description'   => 'Top widget container',
+      'before_widget'  => '<div id="%1$s" class="top-widget card-body %2$s">', 
+      'after_widget'   => '</div>', 
+      'before_title'   => '<h3 class="widget-title">', 
+      'after_title'    => '</h3>'
+  ) );
+}
+add_action( 'widgets_init', 'saylorstrap_widgets_init');
 
 function get_excerpt($count, $post_id){
   $permalink = get_permalink($post_id);
