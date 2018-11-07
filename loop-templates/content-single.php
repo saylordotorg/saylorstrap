@@ -14,17 +14,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<header class="entry-header card-title">
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php echo get_the_post_thumbnail( $post->ID, 'large card card-img-top mb-2' ); ?>
 
-		<div class="entry-meta card-subtitle my-2">
+		<div class="entry-meta card-subtitle mb-3">
 
 			<?php understrap_posted_on(); ?>
 
 		</div><!-- .entry-meta -->
 
 	</header><!-- .entry-header -->
-
-	<?php echo get_the_post_thumbnail( $post->ID, 'large card card-img-top mb-3' ); ?>
 
 	<div class="entry-content">
 
