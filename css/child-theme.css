@@ -10917,7 +10917,8 @@ h1 {
 .contact-form > p > .wpcf7-submit {
   color: #fff;
   background-color: #f16505;
-  border-color: #cc5504; }
+  border-color: #cc5504;
+  max-width: 10vw; }
 
 .contact-form > p > .wpcf7-submit[disabled], .wpcf7-submit.disabled {
   background: #f16505; }
