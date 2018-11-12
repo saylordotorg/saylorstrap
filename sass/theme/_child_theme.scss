@@ -57,6 +57,35 @@ h1 { font-family: $font-family-header;
     font-family: $font-family-buttons;
 }
 
+// Contact form submit button.
+.contact-form>p>.wpcf7-submit {
+    color: #fff;
+    background-color: #f16505;
+    border-color: #cc5504;
+}
+.contact-form>p>.wpcf7-submit[disabled], .wpcf7-submit.disabled {
+    background: $button-bg-orange;
+}
+.contact-form>p>.wpcf7-submit:not(:disabled):not(.disabled):active:focus {
+    -webkit-box-shadow: 0 0 0 .2rem rgba(204,85,4,.5);
+    box-shadow: 0 0 0 .2rem rgba(204,85,4,.5);
+}
+.contact-form>p>.wpcf7-submit:not(:disabled):not(.disabled):active {
+    color: #212529;
+    background-color: #fb812e;
+    border-color: #5b2602;
+    background-image: none;
+}
+.contact-form>p>.wpcf7-submit:hover {
+    color: #fff;
+    background-color: #bf5004;
+    border-color: #fa7215;
+}
+.contact-form>p>.wpcf7-submit:focus, .wpcf7-submit.focus {
+    -webkit-box-shadow: 0 0 0 .2rem rgba(204,85,4,.5);
+    box-shadow: 0 0 0 .2rem rgba(204,85,4,.5);
+}
+
 /** Footer */
 #page-footer a {
     text-decoration: none;

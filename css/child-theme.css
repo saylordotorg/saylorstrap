@@ -10914,6 +10914,33 @@ h1 {
 .wpcf7 input[type=submit] {
   font-family: "Comfortaa", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
+.contact-form > p > .wpcf7-submit {
+  color: #fff;
+  background-color: #f16505;
+  border-color: #cc5504; }
+
+.contact-form > p > .wpcf7-submit[disabled], .wpcf7-submit.disabled {
+  background: #f16505; }
+
+.contact-form > p > .wpcf7-submit:not(:disabled):not(.disabled):active:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(204, 85, 4, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(204, 85, 4, 0.5); }
+
+.contact-form > p > .wpcf7-submit:not(:disabled):not(.disabled):active {
+  color: #212529;
+  background-color: #fb812e;
+  border-color: #5b2602;
+  background-image: none; }
+
+.contact-form > p > .wpcf7-submit:hover {
+  color: #fff;
+  background-color: #bf5004;
+  border-color: #fa7215; }
+
+.contact-form > p > .wpcf7-submit:focus, .wpcf7-submit.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(204, 85, 4, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(204, 85, 4, 0.5); }
+
 /** Footer */
 #page-footer a {
   text-decoration: none; }
