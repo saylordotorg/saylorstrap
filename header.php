@@ -23,8 +23,43 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<meta name="apple-mobile-web-app-title" content="<?php bloginfo( 'name' ); ?> - <?php bloginfo( 'description' ); ?>">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/favicons/safari-pinned-tab.png" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#f5f5f5">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/favicons/favicon.ico">
+    <!-- End Favicons -->
 	<?php wp_head(); ?>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-16530955-1', 'auto');
+      ga('send', 'pageview');
+      ga('set', 'anonymizeIp', true);
+    </script>
+    <!-- End Google Analytics -->
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1336566346389237'); // Insert your pixel ID here.
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1336566346389237&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- DO NOT MODIFY -->
+	<!-- End Facebook Pixel Code -->
 </head>
 
 <body class="drawer-ease">
@@ -57,7 +92,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="navbar-brand" class="navbar-brand has-logo mx-auto">
                 <div class="logo d-inline-flex mx-auto">
-                    <img class="icon " alt="Saylor" title="Saylor" src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/logo_dark_large.svg">
+                    <img class="icon " alt="Saylor" title="Saylor" src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/logos/logo_dark_large.svg">
                 </div>
            </a>
 
