@@ -23,6 +23,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<meta name="apple-mobile-web-app-title" content="<?php bloginfo( 'name' ); ?> - <?php bloginfo( 'description' ); ?>">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/favicons/safari-pinned-tab.png" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#f5f5f5">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/favicons/favicon.ico">
+    <!-- End Favicons -->
 	<?php wp_head(); ?>
     <!-- Google Analytics -->
     <script>
