@@ -92,22 +92,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 </footer>
 
 <div id="nav-drawer" data-region="drawer" class="d-print-none moodle-has-zindex closed d-flex flex-column" aria-hidden="" tabindex="-1">
-    
-            <?php wp_nav_menu(
-                array(
-                    'theme_location'  => 'primary',
-                    'container'       => 'nav',
-                    'container_class' => 'd-md-none mb-1',
-                    'container_id'    => '',
-                    'menu_class'      => 'list-group',
-                    'fallback_cb'     => '',
-                    'link_before'     => '<div class="ml-1">',
-                    'link_after'      => '</div>',
-                    'menu_id'         => 'main-menu',
-                    'depth'           => 2,
-                    'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-                )
-            ); ?>
             <?php wp_nav_menu(
                 array(
                     'theme_location'  => 'footer2',
@@ -120,6 +104,21 @@ $container = get_theme_mod( 'understrap_container_type' );
                     'link_after'      => '</div>',
                     'menu_id'         => 'nav-footer',
                     'depth'           => 0,
+                    'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+                )
+            ); ?>
+            <?php wp_nav_menu(
+                array(
+                    'theme_location'  => 'primary',
+                    'container'       => 'nav',
+                    'container_class' => 'd-md-none mb-1',
+                    'container_id'    => '',
+                    'menu_class'      => 'list-group',
+                    'fallback_cb'     => '',
+                    'link_before'     => '<div class="ml-1">',
+                    'link_after'      => '</div>',
+                    'menu_id'         => 'main-menu',
+                    'depth'           => 2,
                     'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
                 )
             ); ?>
