@@ -73,7 +73,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         </div>
 
         <div id="footer-text-container" class="font-weight-light small text-center d-flex flex-column container-fluid mt-1">
-            <p class="mb-0">© Saylor Academy 2010-<?php echo date('Y'); ?> except as otherwise noted. Excluding course final exams, content authored by Saylor Academy is available under a <a class="text-secondary" rel="license" href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 Unported</a> license. Third-party materials are the copyright of their respective owners and shared under various licenses. See <a class="text-secondary" href="https://www.saylor.org/open/licensinginformation" target="_blank">detailed licensing information</a>.</p>
+            <p class="mb-0">© Saylor Academy 2010-<?php echo date('Y'); ?> except as otherwise noted. Excluding course final exams, content authored by Saylor Academy is available under a <a class="text-secondary" rel="license" href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 Unported</a> license. Third-party materials are the copyright of their respective owners and shared under various licenses. See <a class="text-secondary" href="https://www.saylor.org/open/licensing-information" target="_blank">detailed licensing information</a>.</p>
             <p class="mt-0">Saylor Academy and Saylor.org® are trade names of the Constitution Foundation, a 501(c)(3) organization through which our educational activities are conducted.</p>
         </div>
 
