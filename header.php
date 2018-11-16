@@ -82,7 +82,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="navbar-brand" class="navbar-brand has-logo mx-auto">
                 <div class="logo d-inline-flex mx-auto">
-                    <img class="icon " alt="Saylor" title="Saylor" src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/logo_dark_large.svg">
+                    <img class="icon " alt="Saylor" title="Saylor" src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/logos/logo_dark_large.svg">
                 </div>
            </a>
 
