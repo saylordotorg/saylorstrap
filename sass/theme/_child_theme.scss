@@ -1,3 +1,59 @@
+/** Nav Bar */
+.navbar {
+    box-shadow: 0 3px 0 $primary;
+}
+
+#navbar-login {
+    box-shadow: 0 0;
+    margin-bottom: 1rem;
+}
+
+.navbar .btn {
+    background-color: $gray-200;
+    border-color: $gray-200;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.navbar .btn-secondary:not(.disabled):active:focus{
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.navbar .nav-link .fa-bars {
+    color: $dark;
+}
+
+// Change height, margin and padding of navbar logo.
+.navbar-brand .logo .icon {
+    height: auto;
+    width: 100%;
+    max-width: 206px;
+    max-height: 45px;
+}
+
+.navbar-brand .logo {
+    height: $navbar-height;
+    width: 100%;
+}
+
+#navbar-brand {
+    height: $navbar-height;
+    max-width: 206px;
+    width: 100%;
+    padding-right: 4px;
+}
+
+.navbar-nav li.usermenu {
+    line-height: 1;
+    margin-right: -.5rem;
+}
+
+.navbar-nav .usermenu .login {
+    line-height: 1rem;
+    font-size: 1.2rem;
+}
+
 /** Buttons */
 // Button color should be our button orange.
 .btn-primary {
@@ -25,11 +81,6 @@ $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
 $font-family-base: "Open Sans", $font-family-sans-serif !default;
 $font-family-header: "Raleway", $font-family-sans-serif;
 $font-family-buttons: "Comfortaa", $font-family-sans-serif;
-
-// Hotfix for Font Awesome family not loading correctly.
-.fa, .far, .fas {
-    font-family: "FontAwesome" !important;
-}
 
 body {
     -webkit-font-smoothing: antialiased;
