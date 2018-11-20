@@ -1,0 +1,42 @@
+$breadcrumb-divider: "▶" !default;
+$breadcrumb-divider-rtl: "◀" !default;
+// Making BS4 Stable compatible with BS4 Alpha for moodle core sass
+@import "../../src/sass/moodle/bs4alphacompat";
+
+// Specific overrides to make Bootstrap RTL.
+@import "../../src/sass/moodle/bootstrap-rtl";
+
+// Old Moodle stuff from base theme.
+// Massive, needs broken up.
+@import "../../src/sass/moodle/core";
+@import "../../src/sass/moodle/icons";
+//@import "../../src/sass/moodle/admin";
+//@import "../../src/sass/moodle/blocks";
+@import "../../src/sass/moodle/bootswatch";
+//@import "../../src/sass/moodle/calendar";
+@import "../../src/sass/moodle/course";
+@import "../../src/sass/moodle/drawer";
+@import "../../src/sass/moodle/filemanager";
+//@import "../../src/sass/moodle/message";
+//@import "../../src/sass/moodle/question";
+//@import "../../src/sass/moodle/user";
+//@import "../../src/sass/moodle/search";
+//@import "../../src/sass/moodle/forms";
+//@import "../../src/sass/moodle/login";
+//@import "../../src/sass/moodle/modules";
+//@import "../../src/sass/moodle/chat";
+//@import "../../src/sass/moodle/reports";
+//@import "../../src/sass/moodle/backup-restore";
+//@import "../../src/sass/moodle/tables";
+@import "../../src/sass/moodle/buttons";
+//@import "../../src/sass/moodle/grade";
+//@import "../../src/sass/moodle/templates";
+@import "../../src/sass/moodle/undo";
+//@import "../../src/sass/moodle/debug";
+//@import "../../src/sass/moodle/expendable";
+//@import "../../src/sass/moodle/sticky-footer";
+//@import "../../src/sass/moodle/popover-region";
+//@import "../../src/sass/moodle/tool_usertours";
+@import "../../src/sass/moodle/bs2-compat";
+//@import "../../src/sass/moodle/print";
+@import "../../src/sass/moodle/modal";
