@@ -14,7 +14,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<header class="entry-header card-title">
 
-		<?php echo get_the_post_thumbnail( $post->ID, 'large card card-img-top mb-2' ); ?>
+		<div class="card card-img-top mb-3">
+			<?php echo get_the_post_thumbnail( $post->ID, 'post-thumbnail' ); ?>
+		</div>
 
 		<div class="entry-meta card-subtitle mb-3">
 
