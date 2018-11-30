@@ -48,6 +48,9 @@ function saylorstrap_widgets_init() {
 }
 add_action( 'widgets_init', 'saylorstrap_widgets_init');
 
+add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 1200, 630, true );
+
 function get_excerpt($count, $post_id){
   $permalink = get_permalink($post_id);
   $excerpt = get_post($post_id);
