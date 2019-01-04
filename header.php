@@ -42,6 +42,7 @@ $container = get_theme_mod( 'understrap_container_type' );
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-16530955-1', 'auto');
       ga('send', 'pageview');
+      ga('require', 'GTM-WCSVTGN');
       ga('set', 'anonymizeIp', true);
     </script>
     <!-- End Google Analytics -->
