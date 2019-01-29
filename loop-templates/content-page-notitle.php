@@ -12,9 +12,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <article <?php post_class('card-body loop-content-page'); ?> id="post-<?php the_ID(); ?>">
 
-	<div class="card card-img-top mb-3">
-		<?php echo get_the_post_thumbnail( $post->ID, 'post-thumbnail' ); ?>
-	</div>
+	<?php
+		if (isset(get_the_post_thumbnail( $post->ID, 'post-thumbnail' ))) {
+			echo '<div class="card card-img-top mb-3 test">';
+			echo get_the_post_thumbnail( $post->ID, 'post-thumbnail' );	
+			echo '</div>';
+		}
+	 ?>
 
 	<div class="entry-content">
 
