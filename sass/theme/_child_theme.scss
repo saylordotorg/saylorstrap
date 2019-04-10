@@ -250,3 +250,7 @@ h1 { font-family: $font-family-header;
         box-shadow:inset 0 0 0 100vw $primary-dark-blue;
     }
 }
+
+.wrapper {
+    min-height: 100vh;
+}
