@@ -21,6 +21,7 @@
 .wrapper {
   background-color: #f5f5f5; }
 
+
 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -8406,9 +8407,6 @@ a.dimmed_text:visited,
   .table .thead-dark th, table.collection .thead-dark th {
     color: inherit;
     border-color: #9f9f9f; } }
-
-.wrapper {
-  padding: 30px 0; }
 
 #wrapper-hero {
   padding: 0px !important; }
