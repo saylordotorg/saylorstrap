@@ -29,7 +29,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     </div>
                 </div>
                 <div id="footer-share" class="footer-share d-inline-flex flex-row justify-content-start ml-1 mr-auto mt-auto mb-auto">
-                    <a title="Facebook | /SaylorFoundation" target="_blank" href="https://www.facebook.com/SaylorFoundation" class="fa fa-facebook fa-2x p-1"></a>
+                    <a title="Facebook | /SaylorFoundation" target="_blank" href="https://www.facebook.com/SaylorAcademy" class="fa fa-facebook fa-2x p-1"></a>
                     <a title="Twitter | @saylordotorg" target="_blank" href="https://twitter.com/saylordotorg" class="fa fa-twitter fa-2x p-1"></a>
                     <a title="Instagram | @saylordotorg" target="_blank" href="https://www.instagram.com/saylordotorg" class="fa fa-instagram fa-2x p-1"></a>
                     <a title="GitHub | /saylordotorg" target="_blank" href="https://github.com/saylordotorg" class="fa fa-github fa-2x p-1"></a>
