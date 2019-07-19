@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <article <?php post_class('card mb-3 row loop-content'); ?> id="post-<?php the_ID(); ?>">
 	<div class="card-body content-container container d-flex flex-column flex-lg-row align-items-center justify-content-between">
 		<?php if (!empty(get_the_post_thumbnail( $post->ID))) {
-			echo '<div class="card m-3 col-lg-4 p-0">';
+			echo '<div class="card m-3 col-lg-4 p-0 d-none d-md-block">';
 			echo '<a href="'.get_page_uri( $post->ID ).'">';
 			echo get_the_post_thumbnail( $post->ID, 'post-thumbnail');
 			echo '</a></div>';
