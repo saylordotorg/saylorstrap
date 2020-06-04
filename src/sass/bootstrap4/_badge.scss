@@ -6,19 +6,13 @@
 .badge {
   display: inline-block;
   padding: $badge-padding-y $badge-padding-x;
-<<<<<<< HEAD
-  font-size: $badge-font-size;
-=======
   @include font-size($badge-font-size);
->>>>>>> upstream/master
   font-weight: $badge-font-weight;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
   @include border-radius($badge-border-radius);
-<<<<<<< HEAD
-=======
   @include transition($badge-transition);
 
   @at-root a#{&} {
@@ -26,7 +20,6 @@
       text-decoration: none;
     }
   }
->>>>>>> upstream/master
 
   // Empty badges collapse automatically
   &:empty {

@@ -2,14 +2,6 @@
 
 @mixin float-left {
   float: left !important;
-<<<<<<< HEAD
-}
-@mixin float-right {
-  float: right !important;
-}
-@mixin float-none {
-  float: none !important;
-=======
   @include deprecate("The `float-left` mixin", "v4.3.0", "v5");
 }
 @mixin float-right {
@@ -19,5 +11,4 @@
 @mixin float-none {
   float: none !important;
   @include deprecate("The `float-none` mixin", "v4.3.0", "v5");
->>>>>>> upstream/master
 }

@@ -5,10 +5,7 @@
 .table {
   width: 100%;
   margin-bottom: $spacer;
-<<<<<<< HEAD
-=======
   color: $table-color;
->>>>>>> upstream/master
   background-color: $table-bg; // Reset for nesting within parents with `background-color`.
 
   th,
@@ -26,13 +23,6 @@
   tbody + tbody {
     border-top: (2 * $table-border-width) solid $table-border-color;
   }
-<<<<<<< HEAD
-
-  .table {
-    background-color: $body-bg;
-  }
-=======
->>>>>>> upstream/master
 }
 
 
@@ -63,11 +53,7 @@
   thead {
     th,
     td {
-<<<<<<< HEAD
-      border-bottom-width: (2 * $table-border-width);
-=======
       border-bottom-width: 2 * $table-border-width;
->>>>>>> upstream/master
     }
   }
 }
@@ -99,10 +85,7 @@
 .table-hover {
   tbody tr {
     @include hover {
-<<<<<<< HEAD
-=======
       color: $table-hover-color;
->>>>>>> upstream/master
       background-color: $table-hover-bg;
     }
   }
@@ -115,11 +98,7 @@
 // inheritance to nested tables.
 
 @each $color, $value in $theme-colors {
-<<<<<<< HEAD
-  @include table-row-variant($color, theme-color-level($color, -9));
-=======
   @include table-row-variant($color, theme-color-level($color, $table-bg-level), theme-color-level($color, $table-border-level));
->>>>>>> upstream/master
 }
 
 @include table-row-variant(active, $table-active-bg);
@@ -171,10 +150,7 @@
   &.table-hover {
     tbody tr {
       @include hover {
-<<<<<<< HEAD
-=======
         color: $table-dark-hover-color;
->>>>>>> upstream/master
         background-color: $table-dark-hover-bg;
       }
     }
@@ -198,10 +174,6 @@
         width: 100%;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
-<<<<<<< HEAD
-        -ms-overflow-style: -ms-autohiding-scrollbar; // See https://github.com/twbs/bootstrap/pull/10057
-=======
->>>>>>> upstream/master
 
         // Prevent double border on horizontal scroll due to use of `display: block;`
         > .table-bordered {

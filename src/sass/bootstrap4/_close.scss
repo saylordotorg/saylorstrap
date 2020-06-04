@@ -1,28 +1,12 @@
 .close {
   float: right;
-<<<<<<< HEAD
-  font-size: $close-font-size;
-=======
   @include font-size($close-font-size);
->>>>>>> upstream/master
   font-weight: $close-font-weight;
   line-height: 1;
   color: $close-color;
   text-shadow: $close-text-shadow;
   opacity: .5;
 
-<<<<<<< HEAD
-  &:not(:disabled):not(.disabled) {
-
-    @include hover-focus {
-      color: $close-color;
-      text-decoration: none;
-      opacity: .75;
-    }
-
-    // Opinionated: add "hand" cursor to non-disabled .close elements
-    cursor: pointer;
-=======
   // Override <a>'s hover style
   @include hover {
     color: $close-color;
@@ -33,7 +17,6 @@
     @include hover-focus {
       opacity: .75;
     }
->>>>>>> upstream/master
   }
 }
 
@@ -42,20 +25,11 @@
 // If you want the anchor version, it requires `href="#"`.
 // See https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile
 
-<<<<<<< HEAD
-// stylelint-disable property-no-vendor-prefix, selector-no-qualifying-type
-=======
 // stylelint-disable-next-line selector-no-qualifying-type
->>>>>>> upstream/master
 button.close {
   padding: 0;
   background-color: transparent;
   border: 0;
-<<<<<<< HEAD
-  -webkit-appearance: none;
-}
-// stylelint-enable
-=======
   appearance: none;
 }
 
@@ -65,4 +39,3 @@ button.close {
 a.close.disabled {
   pointer-events: none;
 }
->>>>>>> upstream/master

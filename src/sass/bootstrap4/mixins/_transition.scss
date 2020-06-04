@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 // stylelint-disable property-blacklist
->>>>>>> upstream/master
 @mixin transition($transition...) {
   @if $enable-transitions {
     @if length($transition) == 0 {
@@ -11,14 +8,9 @@
     }
   }
 
-<<<<<<< HEAD
-  @media screen and (prefers-reduced-motion: reduce) {
-    transition: none;
-=======
   @if $enable-prefers-reduced-motion-media-query {
     @media (prefers-reduced-motion: reduce) {
       transition: none;
     }
->>>>>>> upstream/master
   }
 }

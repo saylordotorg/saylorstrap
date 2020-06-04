@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-// stylelint-disable declaration-no-important
-=======
 // stylelint-disable property-blacklist, declaration-no-important
->>>>>>> upstream/master
 
 //
 // Border
@@ -34,11 +30,6 @@
 // Border-radius
 //
 
-<<<<<<< HEAD
-.rounded {
-  border-radius: $border-radius !important;
-}
-=======
 .rounded-sm {
   border-radius: $border-radius-sm !important;
 }
@@ -47,54 +38,38 @@
   border-radius: $border-radius !important;
 }
 
->>>>>>> upstream/master
 .rounded-top {
   border-top-left-radius: $border-radius !important;
   border-top-right-radius: $border-radius !important;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> upstream/master
 .rounded-right {
   border-top-right-radius: $border-radius !important;
   border-bottom-right-radius: $border-radius !important;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> upstream/master
 .rounded-bottom {
   border-bottom-right-radius: $border-radius !important;
   border-bottom-left-radius: $border-radius !important;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> upstream/master
 .rounded-left {
   border-top-left-radius: $border-radius !important;
   border-bottom-left-radius: $border-radius !important;
 }
 
-<<<<<<< HEAD
-=======
 .rounded-lg {
   border-radius: $border-radius-lg !important;
 }
 
->>>>>>> upstream/master
 .rounded-circle {
   border-radius: 50% !important;
 }
 
-<<<<<<< HEAD
-=======
 .rounded-pill {
   border-radius: $rounded-pill !important;
 }
 
->>>>>>> upstream/master
 .rounded-0 {
   border-radius: 0 !important;
 }

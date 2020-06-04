@@ -12,10 +12,7 @@
   width: 100%;
 
   > .form-control,
-<<<<<<< HEAD
-=======
   > .form-control-plaintext,
->>>>>>> upstream/master
   > .custom-select,
   > .custom-file {
     position: relative; // For focus state's z-index
@@ -79,13 +76,10 @@
   .btn {
     position: relative;
     z-index: 2;
-<<<<<<< HEAD
-=======
 
     &:focus {
       z-index: 3;
     }
->>>>>>> upstream/master
   }
 
   .btn + .btn,
@@ -110,11 +104,7 @@
   align-items: center;
   padding: $input-padding-y $input-padding-x;
   margin-bottom: 0; // Allow use of <label> elements by overriding our default margin-bottom
-<<<<<<< HEAD
-  font-size: $font-size-base; // Match inputs
-=======
   @include font-size($input-font-size); // Match inputs
->>>>>>> upstream/master
   font-weight: $font-weight-normal;
   line-height: $input-line-height;
   color: $input-group-addon-color;
@@ -137,9 +127,6 @@
 // Remix the default form control sizing classes into new ones for easier
 // manipulation.
 
-<<<<<<< HEAD
-.input-group-lg > .form-control,
-=======
 .input-group-lg > .form-control:not(textarea),
 .input-group-lg > .custom-select {
   height: $input-height-lg;
@@ -147,26 +134,16 @@
 
 .input-group-lg > .form-control,
 .input-group-lg > .custom-select,
->>>>>>> upstream/master
 .input-group-lg > .input-group-prepend > .input-group-text,
 .input-group-lg > .input-group-append > .input-group-text,
 .input-group-lg > .input-group-prepend > .btn,
 .input-group-lg > .input-group-append > .btn {
-<<<<<<< HEAD
-  height: $input-height-lg;
-  padding: $input-padding-y-lg $input-padding-x-lg;
-  font-size: $font-size-lg;
-=======
   padding: $input-padding-y-lg $input-padding-x-lg;
   @include font-size($input-font-size-lg);
->>>>>>> upstream/master
   line-height: $input-line-height-lg;
   @include border-radius($input-border-radius-lg);
 }
 
-<<<<<<< HEAD
-.input-group-sm > .form-control,
-=======
 .input-group-sm > .form-control:not(textarea),
 .input-group-sm > .custom-select {
   height: $input-height-sm;
@@ -174,31 +151,21 @@
 
 .input-group-sm > .form-control,
 .input-group-sm > .custom-select,
->>>>>>> upstream/master
 .input-group-sm > .input-group-prepend > .input-group-text,
 .input-group-sm > .input-group-append > .input-group-text,
 .input-group-sm > .input-group-prepend > .btn,
 .input-group-sm > .input-group-append > .btn {
-<<<<<<< HEAD
-  height: $input-height-sm;
-  padding: $input-padding-y-sm $input-padding-x-sm;
-  font-size: $font-size-sm;
-=======
   padding: $input-padding-y-sm $input-padding-x-sm;
   @include font-size($input-font-size-sm);
->>>>>>> upstream/master
   line-height: $input-line-height-sm;
   @include border-radius($input-border-radius-sm);
 }
 
-<<<<<<< HEAD
-=======
 .input-group-lg > .custom-select,
 .input-group-sm > .custom-select {
   padding-right: $custom-select-padding-x + $custom-select-indicator-padding;
 }
 
->>>>>>> upstream/master
 
 // Prepend and append rounded corners
 //

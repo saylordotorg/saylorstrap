@@ -10,13 +10,8 @@
 .custom-control {
   position: relative;
   display: block;
-<<<<<<< HEAD
-  min-height: ($font-size-base * $line-height-base);
-  padding-left: $custom-control-gutter;
-=======
   min-height: $font-size-base * $line-height-base;
   padding-left: $custom-control-gutter + $custom-control-indicator-size;
->>>>>>> upstream/master
 }
 
 .custom-control-inline {
@@ -31,24 +26,13 @@
 
   &:checked ~ .custom-control-label::before {
     color: $custom-control-indicator-checked-color;
-<<<<<<< HEAD
-=======
     border-color: $custom-control-indicator-checked-border-color;
->>>>>>> upstream/master
     @include gradient-bg($custom-control-indicator-checked-bg);
     @include box-shadow($custom-control-indicator-checked-box-shadow);
   }
 
   &:focus ~ .custom-control-label::before {
     // the mixin is not used here to make sure there is feedback
-<<<<<<< HEAD
-    box-shadow: $custom-control-indicator-focus-box-shadow;
-  }
-
-  &:active ~ .custom-control-label::before {
-    color: $custom-control-indicator-active-color;
-    background-color: $custom-control-indicator-active-bg;
-=======
     @if $enable-shadows {
       box-shadow: $input-box-shadow, $input-focus-box-shadow;
     } @else {
@@ -64,7 +48,6 @@
     color: $custom-control-indicator-active-color;
     background-color: $custom-control-indicator-active-bg;
     border-color: $custom-control-indicator-active-border-color;
->>>>>>> upstream/master
     @include box-shadow($custom-control-indicator-active-box-shadow);
   }
 
@@ -86,57 +69,33 @@
 .custom-control-label {
   position: relative;
   margin-bottom: 0;
-<<<<<<< HEAD
-=======
   vertical-align: top;
->>>>>>> upstream/master
 
   // Background-color and (when enabled) gradient
   &::before {
     position: absolute;
-<<<<<<< HEAD
-    top: (($font-size-base * $line-height-base - $custom-control-indicator-size) / 2);
-    left: -$custom-control-gutter;
-=======
     top: ($font-size-base * $line-height-base - $custom-control-indicator-size) / 2;
     left: -($custom-control-gutter + $custom-control-indicator-size);
->>>>>>> upstream/master
     display: block;
     width: $custom-control-indicator-size;
     height: $custom-control-indicator-size;
     pointer-events: none;
     content: "";
-<<<<<<< HEAD
-    user-select: none;
-    background-color: $custom-control-indicator-bg;
-=======
     background-color: $custom-control-indicator-bg;
     border: $custom-control-indicator-border-color solid $custom-control-indicator-border-width;
->>>>>>> upstream/master
     @include box-shadow($custom-control-indicator-box-shadow);
   }
 
   // Foreground (icon)
   &::after {
     position: absolute;
-<<<<<<< HEAD
-    top: (($font-size-base * $line-height-base - $custom-control-indicator-size) / 2);
-    left: -$custom-control-gutter;
-=======
     top: ($font-size-base * $line-height-base - $custom-control-indicator-size) / 2;
     left: -($custom-control-gutter + $custom-control-indicator-size);
->>>>>>> upstream/master
     display: block;
     width: $custom-control-indicator-size;
     height: $custom-control-indicator-size;
     content: "";
-<<<<<<< HEAD
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: $custom-control-indicator-bg-size;
-=======
     background: no-repeat 50% / #{$custom-control-indicator-bg-size};
->>>>>>> upstream/master
   }
 }
 
@@ -151,12 +110,6 @@
   }
 
   .custom-control-input:checked ~ .custom-control-label {
-<<<<<<< HEAD
-    &::before {
-      @include gradient-bg($custom-control-indicator-checked-bg);
-    }
-=======
->>>>>>> upstream/master
     &::after {
       background-image: $custom-checkbox-indicator-icon-checked;
     }
@@ -164,10 +117,7 @@
 
   .custom-control-input:indeterminate ~ .custom-control-label {
     &::before {
-<<<<<<< HEAD
-=======
       border-color: $custom-checkbox-indicator-indeterminate-border-color;
->>>>>>> upstream/master
       @include gradient-bg($custom-checkbox-indicator-indeterminate-bg);
       @include box-shadow($custom-checkbox-indicator-indeterminate-box-shadow);
     }
@@ -192,21 +142,11 @@
 
 .custom-radio {
   .custom-control-label::before {
-<<<<<<< HEAD
-=======
     // stylelint-disable-next-line property-blacklist
->>>>>>> upstream/master
     border-radius: $custom-radio-indicator-border-radius;
   }
 
   .custom-control-input:checked ~ .custom-control-label {
-<<<<<<< HEAD
-    &::before {
-      @include gradient-bg($custom-control-indicator-checked-bg);
-    }
-    &::after {
-      background-image: $custom-radio-indicator-icon-checked;
-=======
     &::after {
       background-image: $custom-radio-indicator-icon-checked;
     }
@@ -252,7 +192,6 @@
     &::after {
       background-color: $custom-control-indicator-bg;
       transform: translateX($custom-switch-width - $custom-control-indicator-size);
->>>>>>> upstream/master
     }
   }
 
@@ -275,19 +214,6 @@
   width: 100%;
   height: $custom-select-height;
   padding: $custom-select-padding-y ($custom-select-padding-x + $custom-select-indicator-padding) $custom-select-padding-y $custom-select-padding-x;
-<<<<<<< HEAD
-  line-height: $custom-select-line-height;
-  color: $custom-select-color;
-  vertical-align: middle;
-  background: $custom-select-bg $custom-select-indicator no-repeat right $custom-select-padding-x center;
-  background-size: $custom-select-bg-size;
-  border: $custom-select-border-width solid $custom-select-border-color;
-  @if $enable-rounded {
-    border-radius: $custom-select-border-radius;
-  } @else {
-    border-radius: 0;
-  }
-=======
   font-family: $custom-select-font-family;
   @include font-size($custom-select-font-size);
   font-weight: $custom-select-font-weight;
@@ -298,7 +224,6 @@
   background-color: $custom-select-bg;
   border: $custom-select-border-width solid $custom-select-border-color;
   @include border-radius($custom-select-border-radius, 0);
->>>>>>> upstream/master
   @include box-shadow($custom-select-box-shadow);
   appearance: none;
 
@@ -336,40 +261,24 @@
 
   // Hides the default caret in IE11
   &::-ms-expand {
-<<<<<<< HEAD
-    opacity: 0;
-=======
     display: none;
->>>>>>> upstream/master
   }
 }
 
 .custom-select-sm {
   height: $custom-select-height-sm;
-<<<<<<< HEAD
-  padding-top: $custom-select-padding-y;
-  padding-bottom: $custom-select-padding-y;
-  font-size: $custom-select-font-size-sm;
-=======
   padding-top: $custom-select-padding-y-sm;
   padding-bottom: $custom-select-padding-y-sm;
   padding-left: $custom-select-padding-x-sm;
   @include font-size($custom-select-font-size-sm);
->>>>>>> upstream/master
 }
 
 .custom-select-lg {
   height: $custom-select-height-lg;
-<<<<<<< HEAD
-  padding-top: $custom-select-padding-y;
-  padding-bottom: $custom-select-padding-y;
-  font-size: $custom-select-font-size-lg;
-=======
   padding-top: $custom-select-padding-y-lg;
   padding-bottom: $custom-select-padding-y-lg;
   padding-left: $custom-select-padding-x-lg;
   @include font-size($custom-select-font-size-lg);
->>>>>>> upstream/master
 }
 
 
@@ -396,13 +305,6 @@
   &:focus ~ .custom-file-label {
     border-color: $custom-file-focus-border-color;
     box-shadow: $custom-file-focus-box-shadow;
-<<<<<<< HEAD
-
-    &::after {
-      border-color: $custom-file-focus-border-color;
-    }
-=======
->>>>>>> upstream/master
   }
 
   &:disabled ~ .custom-file-label {
@@ -414,13 +316,10 @@
       content: $value;
     }
   }
-<<<<<<< HEAD
-=======
 
   ~ .custom-file-label[data-browse]::after {
     content: attr(data-browse);
   }
->>>>>>> upstream/master
 }
 
 .custom-file-label {
@@ -431,11 +330,8 @@
   z-index: 1;
   height: $custom-file-height;
   padding: $custom-file-padding-y $custom-file-padding-x;
-<<<<<<< HEAD
-=======
   font-family: $custom-file-font-family;
   font-weight: $custom-file-font-weight;
->>>>>>> upstream/master
   line-height: $custom-file-line-height;
   color: $custom-file-color;
   background-color: $custom-file-bg;
@@ -456,11 +352,7 @@
     color: $custom-file-button-color;
     content: "Browse";
     @include gradient-bg($custom-file-button-bg);
-<<<<<<< HEAD
-    border-left: $custom-file-border-width solid $custom-file-border-color;
-=======
     border-left: inherit;
->>>>>>> upstream/master
     @include border-radius(0 $custom-file-border-radius $custom-file-border-radius 0);
   }
 }
@@ -473,23 +365,15 @@
 
 .custom-range {
   width: 100%;
-<<<<<<< HEAD
-  padding-left: 0; // Firefox specific
-=======
   height: calc(#{$custom-range-thumb-height} + #{$custom-range-thumb-focus-box-shadow-width * 2});
   padding: 0; // Need to reset padding
->>>>>>> upstream/master
   background-color: transparent;
   appearance: none;
 
   &:focus {
     outline: none;
 
-<<<<<<< HEAD
-    // Pseudo-elements must be split across multiple rulesets to have an affect.
-=======
     // Pseudo-elements must be split across multiple rulesets to have an effect.
->>>>>>> upstream/master
     // No box-shadow() mixin for focus accessibility.
     &::-webkit-slider-thumb { box-shadow: $custom-range-thumb-focus-box-shadow; }
     &::-moz-range-thumb     { box-shadow: $custom-range-thumb-focus-box-shadow; }
@@ -503,11 +387,7 @@
   &::-webkit-slider-thumb {
     width: $custom-range-thumb-width;
     height: $custom-range-thumb-height;
-<<<<<<< HEAD
-    margin-top: (($custom-range-track-height - $custom-range-thumb-height) / 2); // Webkit specific
-=======
     margin-top: ($custom-range-track-height - $custom-range-thumb-height) / 2; // Webkit specific
->>>>>>> upstream/master
     @include gradient-bg($custom-range-thumb-bg);
     border: $custom-range-thumb-border;
     @include border-radius($custom-range-thumb-border-radius);
@@ -582,11 +462,7 @@
     cursor: $custom-range-track-cursor;
     background-color: transparent;
     border-color: transparent;
-<<<<<<< HEAD
-    border-width: ($custom-range-thumb-height * .5);
-=======
     border-width: $custom-range-thumb-height / 2;
->>>>>>> upstream/master
     @include box-shadow($custom-range-track-box-shadow);
   }
 
@@ -600,8 +476,6 @@
     background-color: $custom-range-track-bg;
     @include border-radius($custom-range-track-border-radius);
   }
-<<<<<<< HEAD
-=======
 
   &:disabled {
     &::-webkit-slider-thumb {
@@ -624,7 +498,6 @@
       background-color: $custom-range-thumb-disabled-bg;
     }
   }
->>>>>>> upstream/master
 }
 
 .custom-control-label::before,

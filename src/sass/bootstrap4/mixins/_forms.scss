@@ -26,20 +26,12 @@
 }
 
 
-<<<<<<< HEAD
-@mixin form-validation-state($state, $color) {
-=======
 @mixin form-validation-state($state, $color, $icon) {
->>>>>>> upstream/master
   .#{$state}-feedback {
     display: none;
     width: 100%;
     margin-top: $form-feedback-margin-top;
-<<<<<<< HEAD
-    font-size: $form-feedback-font-size;
-=======
     @include font-size($form-feedback-font-size);
->>>>>>> upstream/master
     color: $color;
   }
 
@@ -49,18 +41,6 @@
     z-index: 5;
     display: none;
     max-width: 100%; // Contain to parent when possible
-<<<<<<< HEAD
-    padding: $tooltip-padding-y $tooltip-padding-x;
-    margin-top: .1rem;
-    font-size: $tooltip-font-size;
-    line-height: $line-height-base;
-    color: color-yiq($color);
-    background-color: rgba($color, $tooltip-opacity);
-    @include border-radius($tooltip-border-radius);
-  }
-
-  .form-control,
-=======
     padding: $form-feedback-tooltip-padding-y $form-feedback-tooltip-padding-x;
     margin-top: .1rem;
     @include font-size($form-feedback-tooltip-font-size);
@@ -106,20 +86,16 @@
     }
   }
 
->>>>>>> upstream/master
   .custom-select {
     .was-validated &:#{$state},
     &.is-#{$state} {
       border-color: $color;
 
-<<<<<<< HEAD
-=======
       @if $enable-validation-icons {
         padding-right: $custom-select-feedback-icon-padding-right;
         background: $custom-select-background, $icon $custom-select-bg no-repeat $custom-select-feedback-icon-position / $custom-select-feedback-icon-size;
       }
 
->>>>>>> upstream/master
       &:focus {
         border-color: $color;
         box-shadow: 0 0 0 $input-focus-width rgba($color, .25);
@@ -132,10 +108,7 @@
     }
   }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> upstream/master
   .form-control-file {
     .was-validated &:#{$state},
     &.is-#{$state} {
@@ -167,11 +140,7 @@
         color: $color;
 
         &::before {
-<<<<<<< HEAD
-          background-color: lighten($color, 25%);
-=======
           border-color: $color;
->>>>>>> upstream/master
         }
       }
 
@@ -182,25 +151,18 @@
 
       &:checked {
         ~ .custom-control-label::before {
-<<<<<<< HEAD
-=======
           border-color: lighten($color, 10%);
->>>>>>> upstream/master
           @include gradient-bg(lighten($color, 10%));
         }
       }
 
       &:focus {
         ~ .custom-control-label::before {
-<<<<<<< HEAD
-          box-shadow: 0 0 0 1px $body-bg, 0 0 0 $input-focus-width rgba($color, .25);
-=======
           box-shadow: 0 0 0 $input-focus-width rgba($color, .25);
         }
 
         &:not(:checked) ~ .custom-control-label::before {
           border-color: $color;
->>>>>>> upstream/master
         }
       }
     }
@@ -212,11 +174,6 @@
     &.is-#{$state} {
       ~ .custom-file-label {
         border-color: $color;
-<<<<<<< HEAD
-
-        &::after { border-color: inherit; }
-=======
->>>>>>> upstream/master
       }
 
       ~ .#{$state}-feedback,
@@ -226,10 +183,7 @@
 
       &:focus {
         ~ .custom-file-label {
-<<<<<<< HEAD
-=======
           border-color: $color;
->>>>>>> upstream/master
           box-shadow: 0 0 0 $input-focus-width rgba($color, .25);
         }
       }

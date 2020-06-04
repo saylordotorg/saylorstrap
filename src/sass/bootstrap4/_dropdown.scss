@@ -7,11 +7,8 @@
 }
 
 .dropdown-toggle {
-<<<<<<< HEAD
-=======
   white-space: nowrap;
 
->>>>>>> upstream/master
   // Generate the caret automatically
   @include caret;
 }
@@ -27,13 +24,8 @@
   min-width: $dropdown-min-width;
   padding: $dropdown-padding-y 0;
   margin: $dropdown-spacer 0 0; // override default ul
-<<<<<<< HEAD
-  font-size: $font-size-base; // Redeclare because nesting can cause inheritance issues
-  color: $body-color;
-=======
   @include font-size($dropdown-font-size);
   color: $dropdown-color;
->>>>>>> upstream/master
   text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
   list-style: none;
   background-color: $dropdown-bg;
@@ -43,11 +35,6 @@
   @include box-shadow($dropdown-box-shadow);
 }
 
-<<<<<<< HEAD
-.dropdown-menu-right {
-  right: 0;
-  left: auto;
-=======
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
@@ -62,7 +49,6 @@
       left: auto;
     }
   }
->>>>>>> upstream/master
 }
 
 // Allow for dropdowns to go bottom up (aka, dropup-menu)
@@ -115,11 +101,7 @@
 }
 
 // When enabled Popper.js, reset basic dropdown position
-<<<<<<< HEAD
-// stylelint-disable no-duplicate-selectors
-=======
 // stylelint-disable-next-line no-duplicate-selectors
->>>>>>> upstream/master
 .dropdown-menu {
   &[x-placement^="top"],
   &[x-placement^="right"],
@@ -129,18 +111,10 @@
     bottom: auto;
   }
 }
-<<<<<<< HEAD
-// stylelint-enable no-duplicate-selectors
-
-// Dividers (basically an `<hr>`) within the dropdown
-.dropdown-divider {
-  @include nav-divider($dropdown-divider-bg);
-=======
 
 // Dividers (basically an `<hr>`) within the dropdown
 .dropdown-divider {
   @include nav-divider($dropdown-divider-bg, $dropdown-divider-margin-y);
->>>>>>> upstream/master
 }
 
 // Links, buttons, and more within the dropdown menu
@@ -158,8 +132,6 @@
   background-color: transparent; // For `<button>`s
   border: 0; // For `<button>`s
 
-<<<<<<< HEAD
-=======
   // Prevent dropdown overflow if there's no padding
   // See https://github.com/twbs/bootstrap/pull/27703
   @if $dropdown-padding-y == 0 {
@@ -172,7 +144,6 @@
     }
   }
 
->>>>>>> upstream/master
   @include hover-focus {
     color: $dropdown-link-hover-color;
     text-decoration: none;
@@ -189,10 +160,7 @@
   &.disabled,
   &:disabled {
     color: $dropdown-link-disabled-color;
-<<<<<<< HEAD
-=======
     pointer-events: none;
->>>>>>> upstream/master
     background-color: transparent;
     // Remove CSS gradients if they're enabled
     @if $enable-gradients {
@@ -210,11 +178,7 @@
   display: block;
   padding: $dropdown-padding-y $dropdown-item-padding-x;
   margin-bottom: 0; // for use with heading elements
-<<<<<<< HEAD
-  font-size: $font-size-sm;
-=======
   @include font-size($font-size-sm);
->>>>>>> upstream/master
   color: $dropdown-header-color;
   white-space: nowrap; // as with > li > a
 }
