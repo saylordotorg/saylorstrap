@@ -1,6 +1,10 @@
 // Tables
 
+<<<<<<< HEAD
 @mixin table-row-variant($state, $background) {
+=======
+@mixin table-row-variant($state, $background, $border: null) {
+>>>>>>> upstream/master
   // Exact selectors below required to override `.table-striped` and prevent
   // inheritance to nested tables.
   .table-#{$state} {
@@ -9,6 +13,18 @@
     > td {
       background-color: $background;
     }
+<<<<<<< HEAD
+=======
+
+    @if $border != null {
+      th,
+      td,
+      thead th,
+      tbody + tbody {
+        border-color: $border;
+      }
+    }
+>>>>>>> upstream/master
   }
 
   // Hover states for `.table-hover`

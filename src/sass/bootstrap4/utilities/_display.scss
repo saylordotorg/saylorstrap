@@ -8,6 +8,7 @@
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
+<<<<<<< HEAD
     .d#{$infix}-none         { display: none !important; }
     .d#{$infix}-inline       { display: inline !important; }
     .d#{$infix}-inline-block { display: inline-block !important; }
@@ -17,6 +18,11 @@
     .d#{$infix}-table-cell   { display: table-cell !important; }
     .d#{$infix}-flex         { display: flex !important; }
     .d#{$infix}-inline-flex  { display: inline-flex !important; }
+=======
+    @each $value in $displays {
+      .d#{$infix}-#{$value} { display: $value !important; }
+    }
+>>>>>>> upstream/master
   }
 }
 
@@ -26,6 +32,7 @@
 //
 
 @media print {
+<<<<<<< HEAD
   .d-print-none         { display: none !important; }
   .d-print-inline       { display: inline !important; }
   .d-print-inline-block { display: inline-block !important; }
@@ -35,4 +42,9 @@
   .d-print-table-cell   { display: table-cell !important; }
   .d-print-flex         { display: flex !important; }
   .d-print-inline-flex  { display: inline-flex !important; }
+=======
+  @each $value in $displays {
+    .d-print-#{$value} { display: $value !important; }
+  }
+>>>>>>> upstream/master
 }

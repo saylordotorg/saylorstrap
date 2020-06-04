@@ -22,6 +22,11 @@
   // Disabled state lightens text
   &.disabled {
     color: $nav-link-disabled-color;
+<<<<<<< HEAD
+=======
+    pointer-events: none;
+    cursor: default;
+>>>>>>> upstream/master
   }
 }
 

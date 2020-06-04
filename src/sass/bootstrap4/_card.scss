@@ -6,7 +6,11 @@
   position: relative;
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   min-width: 0;
+=======
+  min-width: 0; // See https://github.com/twbs/bootstrap/pull/22740#issuecomment-305868106
+>>>>>>> upstream/master
   word-wrap: break-word;
   background-color: $card-bg;
   background-clip: border-box;
@@ -36,6 +40,10 @@
   // as much space as possible, ensuring footers are aligned to the bottom.
   flex: 1 1 auto;
   padding: $card-spacer-x;
+<<<<<<< HEAD
+=======
+  color: $card-color;
+>>>>>>> upstream/master
 }
 
 .card-title {
@@ -43,7 +51,11 @@
 }
 
 .card-subtitle {
+<<<<<<< HEAD
   margin-top: -($card-spacer-y / 2);
+=======
+  margin-top: -$card-spacer-y / 2;
+>>>>>>> upstream/master
   margin-bottom: 0;
 }
 
@@ -68,6 +80,10 @@
 .card-header {
   padding: $card-spacer-y $card-spacer-x;
   margin-bottom: 0; // Removes the default margin-bottom of <hN>
+<<<<<<< HEAD
+=======
+  color: $card-cap-color;
+>>>>>>> upstream/master
   background-color: $card-cap-bg;
   border-bottom: $card-border-width solid $card-border-color;
 
@@ -98,15 +114,26 @@
 //
 
 .card-header-tabs {
+<<<<<<< HEAD
   margin-right: -($card-spacer-x / 2);
   margin-bottom: -$card-spacer-y;
   margin-left: -($card-spacer-x / 2);
+=======
+  margin-right: -$card-spacer-x / 2;
+  margin-bottom: -$card-spacer-y;
+  margin-left: -$card-spacer-x / 2;
+>>>>>>> upstream/master
   border-bottom: 0;
 }
 
 .card-header-pills {
+<<<<<<< HEAD
   margin-right: -($card-spacer-x / 2);
   margin-left: -($card-spacer-x / 2);
+=======
+  margin-right: -$card-spacer-x / 2;
+  margin-left: -$card-spacer-x / 2;
+>>>>>>> upstream/master
 }
 
 // Card image
@@ -194,28 +221,49 @@
 
       // Handle rounded corners
       @if $enable-rounded {
+<<<<<<< HEAD
         &:first-child {
+=======
+        &:not(:last-child) {
+>>>>>>> upstream/master
           @include border-right-radius(0);
 
           .card-img-top,
           .card-header {
+<<<<<<< HEAD
+=======
+            // stylelint-disable-next-line property-blacklist
+>>>>>>> upstream/master
             border-top-right-radius: 0;
           }
           .card-img-bottom,
           .card-footer {
+<<<<<<< HEAD
+=======
+            // stylelint-disable-next-line property-blacklist
+>>>>>>> upstream/master
             border-bottom-right-radius: 0;
           }
         }
 
+<<<<<<< HEAD
         &:last-child {
+=======
+        &:not(:first-child) {
+>>>>>>> upstream/master
           @include border-left-radius(0);
 
           .card-img-top,
           .card-header {
+<<<<<<< HEAD
+=======
+            // stylelint-disable-next-line property-blacklist
+>>>>>>> upstream/master
             border-top-left-radius: 0;
           }
           .card-img-bottom,
           .card-footer {
+<<<<<<< HEAD
             border-bottom-left-radius: 0;
           }
         }
@@ -243,6 +291,12 @@
             @include border-radius(0);
           }
         }
+=======
+            // stylelint-disable-next-line property-blacklist
+            border-bottom-left-radius: 0;
+          }
+        }
+>>>>>>> upstream/master
       }
     }
   }
@@ -277,6 +331,7 @@
 //
 
 .accordion {
+<<<<<<< HEAD
   .card:not(:first-of-type):not(:last-of-type) {
     border-bottom: 0;
     border-radius: 0;
@@ -297,5 +352,33 @@
   .card:last-of-type {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+=======
+  > .card {
+    overflow: hidden;
+
+    &:not(:first-of-type) {
+      .card-header:first-child {
+        @include border-radius(0);
+      }
+
+      &:not(:last-of-type) {
+        border-bottom: 0;
+        @include border-radius(0);
+      }
+    }
+
+    &:first-of-type {
+      border-bottom: 0;
+      @include border-bottom-radius(0);
+    }
+
+    &:last-of-type {
+      @include border-top-radius(0);
+    }
+
+    .card-header {
+      margin-bottom: -$card-border-width;
+    }
+>>>>>>> upstream/master
   }
 }

@@ -9,7 +9,11 @@
 
   > .btn {
     position: relative;
+<<<<<<< HEAD
     flex: 0 1 auto;
+=======
+    flex: 1 1 auto;
+>>>>>>> upstream/master
 
     // Bring the hover, focused, and "active" buttons to the front to overlay
     // the borders properly
@@ -22,6 +26,7 @@
       z-index: 1;
     }
   }
+<<<<<<< HEAD
 
   // Prevent double borders when buttons are next to each other
   .btn + .btn,
@@ -30,6 +35,8 @@
   .btn-group + .btn-group {
     margin-left: -$btn-border-width;
   }
+=======
+>>>>>>> upstream/master
 }
 
 // Optional: Group multiple button groups together for a toolbar
@@ -44,8 +51,15 @@
 }
 
 .btn-group {
+<<<<<<< HEAD
   > .btn:first-child {
     margin-left: 0;
+=======
+  // Prevent double borders when buttons are next to each other
+  > .btn:not(:first-child),
+  > .btn-group:not(:first-child) {
+    margin-left: -$btn-border-width;
+>>>>>>> upstream/master
   }
 
   // Reset rounded corners
@@ -119,6 +133,7 @@
   align-items: flex-start;
   justify-content: center;
 
+<<<<<<< HEAD
   .btn,
   .btn-group {
     width: 100%;
@@ -130,6 +145,16 @@
   > .btn-group + .btn-group {
     margin-top: -$btn-border-width;
     margin-left: 0;
+=======
+  > .btn,
+  > .btn-group {
+    width: 100%;
+  }
+
+  > .btn:not(:first-child),
+  > .btn-group:not(:first-child) {
+    margin-top: -$btn-border-width;
+>>>>>>> upstream/master
   }
 
   // Reset rounded corners

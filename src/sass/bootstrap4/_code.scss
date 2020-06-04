@@ -1,6 +1,10 @@
 // Inline code
 code {
+<<<<<<< HEAD
   font-size: $code-font-size;
+=======
+  @include font-size($code-font-size);
+>>>>>>> upstream/master
   color: $code-color;
   word-break: break-word;
 
@@ -13,7 +17,11 @@ code {
 // User input typically entered via keyboard
 kbd {
   padding: $kbd-padding-y $kbd-padding-x;
+<<<<<<< HEAD
   font-size: $kbd-font-size;
+=======
+  @include font-size($kbd-font-size);
+>>>>>>> upstream/master
   color: $kbd-color;
   background-color: $kbd-bg;
   @include border-radius($border-radius-sm);
@@ -21,7 +29,11 @@ kbd {
 
   kbd {
     padding: 0;
+<<<<<<< HEAD
     font-size: 100%;
+=======
+    @include font-size(100%);
+>>>>>>> upstream/master
     font-weight: $nested-kbd-font-weight;
     @include box-shadow(none);
   }
@@ -30,12 +42,20 @@ kbd {
 // Blocks of code
 pre {
   display: block;
+<<<<<<< HEAD
   font-size: $code-font-size;
+=======
+  @include font-size($code-font-size);
+>>>>>>> upstream/master
   color: $pre-color;
 
   // Account for some code outputs that place code tags in pre tags
   code {
+<<<<<<< HEAD
     font-size: inherit;
+=======
+    @include font-size(inherit);
+>>>>>>> upstream/master
     color: inherit;
     word-break: normal;
   }

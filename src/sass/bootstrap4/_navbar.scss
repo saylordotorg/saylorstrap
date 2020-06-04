@@ -44,7 +44,11 @@
   padding-top: $navbar-brand-padding-y;
   padding-bottom: $navbar-brand-padding-y;
   margin-right: $navbar-padding-x;
+<<<<<<< HEAD
   font-size: $navbar-brand-font-size;
+=======
+  @include font-size($navbar-brand-font-size);
+>>>>>>> upstream/master
   line-height: inherit;
   white-space: nowrap;
 
@@ -107,7 +111,11 @@
 // Button for toggling the navbar when in its collapsed state
 .navbar-toggler {
   padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
+<<<<<<< HEAD
   font-size: $navbar-toggler-font-size;
+=======
+  @include font-size($navbar-toggler-font-size);
+>>>>>>> upstream/master
   line-height: 1;
   background-color: transparent; // remove default button style
   border: $border-width solid transparent; // remove default button style
@@ -116,11 +124,14 @@
   @include hover-focus {
     text-decoration: none;
   }
+<<<<<<< HEAD
 
   // Opinionated: add "hand" cursor to non-disabled .navbar-toggler elements
   &:not(:disabled):not(.disabled) {
     cursor: pointer;
   }
+=======
+>>>>>>> upstream/master
 }
 
 // Keep as a separate element so folks can easily override it with another icon
@@ -175,7 +186,11 @@
         }
 
         .navbar-collapse {
+<<<<<<< HEAD
           display: flex !important;  // stylelint-disable-line declaration-no-important
+=======
+          display: flex !important; // stylelint-disable-line declaration-no-important
+>>>>>>> upstream/master
 
           // Changes flex-bases to auto because of an IE10 bug
           flex-basis: auto;
@@ -197,10 +212,17 @@
 // Dark links against a light background
 .navbar-light {
   .navbar-brand {
+<<<<<<< HEAD
     color: $navbar-light-active-color;
 
     @include hover-focus {
       color: $navbar-light-active-color;
+=======
+    color: $navbar-light-brand-color;
+
+    @include hover-focus {
+      color: $navbar-light-brand-hover-color;
+>>>>>>> upstream/master
     }
   }
 
@@ -249,10 +271,17 @@
 // White links against a dark background
 .navbar-dark {
   .navbar-brand {
+<<<<<<< HEAD
     color: $navbar-dark-active-color;
 
     @include hover-focus {
       color: $navbar-dark-active-color;
+=======
+    color: $navbar-dark-brand-color;
+
+    @include hover-focus {
+      color: $navbar-dark-brand-hover-color;
+>>>>>>> upstream/master
     }
   }
 

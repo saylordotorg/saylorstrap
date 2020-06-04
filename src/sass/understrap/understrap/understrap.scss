@@ -38,16 +38,23 @@
   margin-left: 1.5em;
 }
 
+<<<<<<< HEAD
 .aligncenter { margin: 0px auto; }
+=======
+.aligncenter { @extend .mx-auto; }
+>>>>>>> upstream/master
 
 // Post design
 .entry-footer span { padding-right: 10px; }
 
+<<<<<<< HEAD
 //Woocommerce product gallery slider width fix
 figure.woocommerce-product-gallery__wrapper { 
   max-width: inherit !important; 
 }
 
+=======
+>>>>>>> upstream/master
 // Limit featured image size to 100%
 img.wp-post-image,
 article img,
@@ -121,3 +128,8 @@ a.skip-link {
       color: $navbar-dark-active-color;
     }
 }
+<<<<<<< HEAD
+=======
+
+.navbar h1 { font-weight: $font-weight-normal; }
+>>>>>>> upstream/master

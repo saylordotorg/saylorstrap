@@ -1,11 +1,24 @@
+<<<<<<< HEAD
+=======
+// stylelint-disable declaration-no-important
+
+>>>>>>> upstream/master
 //
 // Visibility utilities
 //
 
 .visible {
+<<<<<<< HEAD
   @include invisible(visible);
 }
 
 .invisible {
   @include invisible(hidden);
+=======
+  visibility: visible !important;
+}
+
+.invisible {
+  visibility: hidden !important;
+>>>>>>> upstream/master
 }
